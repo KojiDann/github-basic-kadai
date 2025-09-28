@@ -1,0 +1,52 @@
+danno@LAPTOP-AGRQ8VC6 MINGW64 ~ (main)
+$ mkdir git_challenge
+
+danno@LAPTOP-AGRQ8VC6 MINGW64 ~ (main)
+$ cd git_challenge
+
+danno@LAPTOP-AGRQ8VC6 MINGW64 ~/git_challenge (main)
+$ git init
+Initialized empty Git repository in C:/Users/danno/git_challenge/.git/
+
+danno@LAPTOP-AGRQ8VC6 MINGW64 ~/git_challenge (main)
+$ touch hello_world.txt
+
+danno@LAPTOP-AGRQ8VC6 MINGW64 ~/git_challenge (main)
+$ echo 'Hello, world!' > hello_world.txt
+
+danno@LAPTOP-AGRQ8VC6 MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+danno@LAPTOP-AGRQ8VC6 MINGW64 ~/git_challenge (main)
+$ git commit -m "first commit"
+[main (root-commit) aedcdf0] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+danno@LAPTOP-AGRQ8VC6 MINGW64 ~/git_challenge (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+danno@LAPTOP-AGRQ8VC6 MINGW64 ~/git_challenge (main)
+$ echo 'こんにちは、世界！' >> hello_world.txt
+
+danno@LAPTOP-AGRQ8VC6 MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+danno@LAPTOP-AGRQ8VC6 MINGW64 ~/git_challenge (main)
+$ git commit -m "日本語訳を追記"
+[main fc50ddc] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+
+danno@LAPTOP-AGRQ8VC6 MINGW64 ~/git_challenge (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+danno@LAPTOP-AGRQ8VC6 MINGW64 ~/git_challenge (main)
+$ git log --oneline
+fc50ddc (HEAD -> main) 日本語訳を追記
+aedcdf0 first commit
